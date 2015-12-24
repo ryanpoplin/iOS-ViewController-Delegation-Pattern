@@ -26,6 +26,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, ViewCont
 
 	// @implementation
 	
+	// TODO: - HOW TO MITIGATE THIS?
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		let destinationViewController = segue.destinationViewController as! ViewControllerTwo
 		// to gain reference to the currently instantiated view controller,

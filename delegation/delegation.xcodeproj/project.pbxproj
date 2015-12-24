@@ -16,6 +16,8 @@
 		5ABD4BF51C2B8BAD00537D8F /* delegationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD4BF41C2B8BAD00537D8F /* delegationTests.swift */; };
 		5ABD4C001C2B8BAD00537D8F /* delegationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD4BFF1C2B8BAD00537D8F /* delegationUITests.swift */; };
 		5ABD4C0E1C2B902300537D8F /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD4C0D1C2B902300537D8F /* ViewControllerTwo.swift */; };
+		5ABD4C171C2BA79100537D8F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABD4C151C2BA79100537D8F /* Fabric.framework */; };
+		5ABD4C181C2BA79200537D8F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABD4C161C2BA79100537D8F /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5ABD4C121C2BA69B00537D8F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5ABD4BD91C2B8BAD00537D8F /* delegation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = delegation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABD4BDC1C2B8BAD00537D8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +65,8 @@
 		5ABD4BFF1C2B8BAD00537D8F /* delegationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delegationUITests.swift; sourceTree = "<group>"; };
 		5ABD4C011C2B8BAD00537D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ABD4C0D1C2B902300537D8F /* ViewControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		5ABD4C151C2BA79100537D8F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		5ABD4C161C2BA79100537D8F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ABD4C181C2BA79200537D8F /* Crashlytics.framework in Frameworks */,
+				5ABD4C171C2BA79100537D8F /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +119,8 @@
 		5ABD4BDB1C2B8BAD00537D8F /* delegation */ = {
 			isa = PBXGroup;
 			children = (
+				5ABD4C151C2BA79100537D8F /* Fabric.framework */,
+				5ABD4C161C2BA79100537D8F /* Crashlytics.framework */,
 				5ABD4BDC1C2B8BAD00537D8F /* AppDelegate.swift */,
 				5ABD4BDE1C2B8BAD00537D8F /* ViewController.swift */,
 				5ABD4C0D1C2B902300537D8F /* ViewControllerTwo.swift */,
@@ -141,6 +161,10 @@
 				5ABD4BD51C2B8BAD00537D8F /* Sources */,
 				5ABD4BD61C2B8BAD00537D8F /* Frameworks */,
 				5ABD4BD71C2B8BAD00537D8F /* Resources */,
+				5ABD4C111C2BA67000537D8F /* ShellScript */,
+				5ABD4C121C2BA69B00537D8F /* CopyFiles */,
+				5ABD4C131C2BA6B100537D8F /* ShellScript */,
+				5ABD4C141C2BA6DF00537D8F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -199,6 +223,7 @@
 				TargetAttributes = {
 					5ABD4BD81C2B8BAD00537D8F = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 888TH3ZVF5;
 					};
 					5ABD4BEF1C2B8BAD00537D8F = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -256,6 +281,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5ABD4C111C2BA67000537D8F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		5ABD4C131C2BA6B100537D8F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run c2531b4b254ee315a9964b0de0d78e03a6fd3910 b2ebe51ee6627c0de6545968b9ead29424a7f9c684745848c9ddf65c9ff3d5f4";
+		};
+		5ABD4C141C2BA6DF00537D8F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5ABD4BD51C2B8BAD00537D8F /* Sources */ = {
@@ -405,10 +472,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/delegation",
+				);
 				INFOPLIST_FILE = delegation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.loopi.delegation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -416,10 +490,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/delegation",
+				);
 				INFOPLIST_FILE = delegation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.loopi.delegation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
